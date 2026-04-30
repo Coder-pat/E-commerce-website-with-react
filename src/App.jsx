@@ -1,14 +1,16 @@
-import './App.css'
+import { Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
-const name = 'Patricia'
-const age = 24
   return (
-    <>
-      <h1>Hello, my name is {name}!</h1>
-      <p>I am {age} years old.</p>
-    </>
-  )
+    <div className="app">
+      <Routes>
+        <Route path="/" />
+        <Route path="/auth" />
+        <Route path="/checkout" />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
